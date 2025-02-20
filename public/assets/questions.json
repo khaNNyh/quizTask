@@ -1,0 +1,36 @@
+{
+  "questionsENG": [
+    {
+      "question": "What is the capital of France?",
+      "answers": ["Berlin", "Madrid", "Paris"],
+      "correctAnswer": "Paris"
+    },
+    {
+      "question": "Which planet is known as the Red Planet?",
+      "answers": ["Earth", "Mars", "Jupiter"],
+      "correctAnswer": "Mars"
+    },
+    {
+      "question": "What is 2 + 2?",
+      "answers": ["3", "4", "5"],
+      "correctAnswer": "4"
+    }
+  ],
+  "questionsPL": [
+    {
+      "question": "Jaka jest stolica Francji?",
+      "answers": ["Berlin", "Madryt ", "Paryż"],
+      "correctAnswer": "Paryż"
+    },
+    {
+      "question": "Która planeta jest znana jako czerwona planeta?",
+      "answers": ["Ziemia", "Mars", "Jupiter"],
+      "correctAnswer": "Mars"
+    },
+    {
+      "question": "Ile to 2 + 2?",
+      "answers": ["3", "4", "5"],
+      "correctAnswer": "4"
+    }
+  ]
+}

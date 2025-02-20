@@ -1,0 +1,17 @@
+{
+  "app": {
+    "currentLanguage": "Polski",
+    "Polish": "Polski",
+    "English": "English",
+    "Loading": "Ładowanie...",
+    "results": "Wyniki",
+    "score": "Punkty",
+    "yourAnswer": "Twoja odpowiedź",
+    "correctAnswer": "Poprawna odpowiedź"
+  },
+  "buttons": {
+    "start": "ROZPOCZNIJ TEST",
+    "nextQuestion": "NASTEPNE PYTANIE",
+    "end": "ZAKOŃCZ TEST"
+  }
+}

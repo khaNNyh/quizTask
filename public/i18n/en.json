@@ -1,0 +1,17 @@
+{
+  "app": {
+    "currentLanguage": "English",
+    "Polish": "Polski",
+    "English": "English",
+    "Loading": "Loading...",
+    "results": "Results",
+    "score": "Score",
+    "yourAnswer": "Your answer",
+    "correctAnswer": "Correct answer"
+  },
+  "buttons": {
+    "start": "START QUIZ",
+    "nextQuestion": "NEXT QUESTION",
+    "end": "END QUIZ"
+  }
+}

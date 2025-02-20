@@ -1,0 +1,59 @@
+<div class="bg-white rounded-md shadow-md p-4 min-w-150">
+  @if(questions.length != 0 && !summaryMode){
+  <h2 class="text-2xl font-bold mb-4">
+    {{ questions[currentQuestionIndex]?.question }}
+  </h2>
+  <div class="flex flex-col gap-2">
+    <label
+      class="flex items-center"
+      *ngFor="let answer of questions[currentQuestionIndex]?.answers"
+    >
+      <input
+        type="radio"
+        name="answer"
+        [value]="answer"
+        (change)="selectAnswer(answer)"
+        class="mr-2"
+      />
+      <span class="text-lg">{{ answer }}</span>
+    </label>
+  </div>
+  <button
+    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md mt-4"
+    (click)="nextQuestion()"
+    [disabled]="!selectedAnswer"
+  >
+    {{ "buttons.nextQuestion" | translate }}
+  </button>
+  } @if(questions.length === 0 && !summaryMode){
+  <p>{{ "app.Loading" | translate }}</p>
+  } @if(summaryMode){
+  <h2 class="text-2xl font-bold mb-4">
+    {{ "app.results" | translate }}
+
+    <span
+      [style.color]="
+        finalScore < 30 ? 'red' : finalScore < 75 ? 'orange' : 'green'
+      "
+    >
+      {{ finalScore | number : "1.0-0" }}%
+    </span>
+  </h2>
+  <ul class="list-disc pl-4">
+    <li *ngFor="let qa of userAnswers">
+      <p>{{ qa.question }}</p>
+      <p>{{ "app.yourAnswer" | translate }}: {{ qa.userAnswer }}</p>
+      <p [style.color]="qa.userAnswer === qa.correctAnswer ? 'green' : 'red'">
+        {{ "app.correctAnswer" | translate }}: {{ qa.correctAnswer }}
+      </p>
+    </li>
+  </ul>
+  <p>{{ "app.score" | translate }}: {{ score }}/{{ questions.length }}</p>
+  <button
+    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md mt-4"
+    (click)="endQuestion()"
+  >
+    {{ "buttons.end" | translate }}
+  </button>
+  }
+</div>
