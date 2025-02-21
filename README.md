@@ -4,25 +4,28 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ![image](https://github.com/user-attachments/assets/8765db18-1a7e-4882-8100-581fe14d4f78)
 
-Features:
-*Start Screen
-*Question Screens
- Displays a question with multiple answer options
- Button to proceed to the next question or summary screen
-*Summary Screen
- Displays the number of correct and incorrect answers
- Text feedback based on the score:
- 0-50%
- 51-80%
- 81-100%
-*Button to review answers
-*Answer Review Screens
-*Shows both user-selected and correct answers after completing the quiz
-Application Requirements:
-*Two language versions, with the ability to switch languages at any time without restarting the quiz
-*Option to return to the start screen at any time
-*Automatic return to the start screen after 5 minutes of inactivity
-*All text content is loaded from a .json file
+# Single-Choice Quiz Application
+
+## Features:
+- **Start Screen**
+- **Question Screens**
+  - Displays a question with multiple answer options
+  - Button to proceed to the next question or summary screen
+- **Summary Screen**
+  - Displays the number of correct and incorrect answers
+  - Text feedback based on the score:
+    - 0-50%
+    - 51-80%
+    - 81-100%
+  - Button to review answers
+- **Answer Review Screens**
+  - Shows both user-selected and correct answers after completing the quiz
+
+## Application Requirements:
+- Two language versions, with the ability to switch languages at any time without restarting the quiz
+- Option to return to the start screen at any time
+- Automatic return to the start screen after 5 minutes of inactivity
+- All text content is loaded from a `.json` file
 
 
 ## Development server
