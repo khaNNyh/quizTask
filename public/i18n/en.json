@@ -7,7 +7,10 @@
     "results": "Results",
     "score": "Score",
     "yourAnswer": "Your answer",
-    "correctAnswer": "Correct answer"
+    "correctAnswer": "Correct answer",
+    "badResults": "Try again!",
+    "goodResults": "Good job!",
+    "excellentResults": "Excellent!"
   },
   "buttons": {
     "start": "START QUIZ",

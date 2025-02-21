@@ -39,6 +39,19 @@
       {{ finalScore | number : "1.0-0" }}%
     </span>
   </h2>
+  @if(finalScore < 30){
+  <p class="text-red-500">
+    {{ "app.badResults" | translate }}
+  </p>
+  } @if(finalScore >= 30 && finalScore < 75){
+  <p class="text-orange-500">
+    {{ "app.goodResults" | translate }}
+  </p>
+  } @if(finalScore >= 75){
+  <p class="text-green-500">
+    {{ "app.excellentResults" | translate }}
+  </p>
+  }
   <ul class="list-disc pl-4">
     <li *ngFor="let qa of userAnswers">
       <p>{{ qa.question }}</p>
